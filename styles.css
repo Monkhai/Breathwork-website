@@ -122,6 +122,7 @@ body {
   .interactive_container {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     height: auto;
   }
 
