@@ -7,18 +7,12 @@ const countdownEl = document.querySelector('.countdown');
 const staticEl = document.querySelector('.static');
 const titleEl = document.querySelector('.round_header');
 
-//-------------------------------------------------//
 //----------------Global Variables-----------------//
-//-------------------------------------------------//
 let stopwatchInterval = 0;
 let roundTally = 0;
-//-------------------------------------------------//
 //----------------Global Variables-----------------//
-//-------------------------------------------------//
 
-//-------------------------------------------------//
 //-----------------EVENT LISTENERS-----------------//
-//-------------------------------------------------//
 startBtnEl.addEventListener('click', startRound);
 
 breathGuideEl.addEventListener('ended', startHold);
@@ -26,13 +20,9 @@ breathGuideEl.addEventListener('ended', startHold);
 inhaleBtnEl.addEventListener('click', startInhale);
 
 resetBtnEl.addEventListener('click', resetApp);
-//-------------------------------------------------//
 //-----------------EVENT LISTENERS-----------------//
-//-------------------------------------------------//
 
-//-------------------------------------------------//
 //--------------------FUNCTIONS--------------------//
-//-------------------------------------------------//
 function startInhale() {
   countdownEl.classList.remove('hide');
   stopwatchEl.classList.add('hide');
@@ -132,6 +122,4 @@ function resetApp() {
     item.remove();
   });
 }
-//-------------------------------------------------//
 //--------------------FUNCTIONS--------------------//
-//-------------------------------------------------//
