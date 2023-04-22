@@ -46,6 +46,12 @@ function startInhale() {
 
     countdownEl.textContent = `${formattedSeconds}.${formattedMilliseconds}`;
 
+    if (roundTally == 5) {
+      countdownEl.classList.add('hide');
+      staticEl.classList.remove('hide');
+      clearInterval(countdownInterval);
+    }
+
     if (remainingTime <= 0) {
       clearInterval(countdownInterval);
       countdownEl.textContent = '00.000';
