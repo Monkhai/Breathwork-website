@@ -47,13 +47,21 @@ function startInhale() {
     countdownEl.textContent = `${formattedSeconds}.${formattedMilliseconds}`;
 
     if (remainingTime <= 0) {
-      clearInterval(countdownInterval);
-      countdownEl.textContent = '00.000';
-      countdownEl.classList.add('hide');
-      startRound();
+      if (roundTally >= 5) {
+        clearInterval(countdownInterval);
+        countdownEl.classList.add('hide');
+        staticEl.classList.remove('hide');
+      } else {
+        clearInterval(countdownInterval);
+        countdownEl.textContent = '00.000';
+        countdownEl.classList.add('hide');
+        startRound();
+      }
     }
   }, 10);
 }
+
+function finishSession() {}
 
 function startRound() {
   breathGuideEl.classList.remove('hide');
