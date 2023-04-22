@@ -86,8 +86,6 @@ body {
 .btns:hover {
   appearance: none;
   transition: 0.1s;
-  background-color: #efcf4e;
-  color: #323b40;
   height: 8vw;
   width: 8vw;
   border-radius: 50px;
