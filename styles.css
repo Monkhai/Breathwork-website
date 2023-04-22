@@ -103,7 +103,7 @@ body {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
     justify-items: center;
     align-items: start;
     height: 60% !important;
