@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breathwork Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="round_header">Breathwork Assistant</h1>
+      <div class="interactive_container">
+        <div class="records"></div>
+        <div class="counter">
+          <img src="./assets/static.png" class="static" />
+          <video class="breath_guide hide">
+            <source src="./assets/30-breaths.mp4" />
+          </video>
+          <p class="stopwatch hide">00:00</p>
+          <p class="countdown hide">15:00</p>
+        </div>
+      </div>
+      <dv class="btns_container">
+        <button class="btns start_btn">Start</button>
+        <button class="btns inhale_btn hide">Inhale</button>
+        <button class="btns reset_btn hide">Reset</button>
+      </dv>
+    </div>
+  </body>
+</html>

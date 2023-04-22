@@ -1,0 +1,166 @@
+body {
+  background-color: #1f1b1b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.round_header {
+  color: aliceblue;
+}
+
+.interactive_container {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 1.5fr;
+  width: 80vw;
+  min-height: 150px;
+  height: 35vh;
+  justify-content: center;
+  margin-bottom: 2vw;
+}
+
+.records {
+  color: aliceblue;
+  grid-column: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3.5vw;
+}
+
+.round_record {
+  justify-self: center;
+}
+
+.records_title {
+  font-size: 0.9em;
+}
+
+.counter {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/2;
+}
+
+.static {
+  width: 20vw;
+}
+
+.breath_guide {
+  width: 35vw;
+  height: 35vh;
+}
+
+.stopwatch {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.countdown {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.btns_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btns {
+  appearance: none;
+  background-color: #efcf4e;
+  color: #323b40;
+  height: 6vw;
+  width: 6vw;
+  border-radius: 50px;
+  border: 0;
+  margin: 2vw;
+}
+
+.btns:hover {
+  appearance: none;
+  transition: 0.1s;
+  background-color: #efcf4e;
+  color: #323b40;
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50px;
+  border: 0;
+  margin: 2vw;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 580px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    justify-items: center;
+    align-items: start;
+    height: 60% !important;
+  }
+
+  .round_header {
+    font-size: 2rem;
+  }
+
+  .interactive_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-items: center;
+  }
+
+  .counter {
+    display: grid;
+    justify-items: center;
+    order: 0;
+    margin-bottom: 1rem;
+  }
+
+  .records {
+    order: 1;
+    font-size: 2rem;
+  }
+
+  .round_record {
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .breath_guide {
+    order: 0;
+    height: 60vw;
+    width: 60vw;
+  }
+
+  .static {
+    order: 0;
+    height: 60vw;
+    width: 60vw;
+  }
+
+  .stopwatch {
+    order: 0;
+    height: 60vw;
+  }
+
+  .countdown {
+    order: 0;
+    height: 60vw;
+  }
+
+  .btns {
+    width: 20vw;
+    height: 20vw;
+  }
+}
